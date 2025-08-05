@@ -22,23 +22,6 @@ while ($row = mysqli_fetch_assoc($result)) {
     $data[] = $row; //va them vao mang data
 }
 
-
-if (isset($_GET['name'])) {
-    // $name = $_GET['data'];
-    // //viet cau lenh truy van
-    // $query = "SELECT * FROM tbStudent WHERE stuName LIKE '%" . $name. "%' ";
-    // //thuc thi truy van
-    // $result2 = mysqli_query($cn, $query);
-
-    // //khai bao 1 mang rong de chua du lieu trich xuat ra tu bang ket qua
-    // $data = [];
-
-    // while ($row = mysqli_fetch_assoc($result2)) {
-    //     $data[] = $row; //va them vao mang data
-    // }
-    echo "OK";
-}
-
 //dong ket noi
 disconnect($cn);
 
@@ -87,7 +70,7 @@ disconnect($cn);
 
             $.ajax({
                     method: "GET",
-                    url: "27_student_search_ajax.php",
+                    url: "28_ajax.php",
                     data: {
                         name: $searchName
                     }
