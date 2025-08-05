@@ -14,10 +14,11 @@ if (isset($_GET['name'])) {
 
     while ($row = mysqli_fetch_assoc($result2)) {
         $data[] = $row; //va them vao mang data
-    } ?>
-
+    } 
+    
     //dong ket noi
     disconnect($cn);
+    ?>
 
      <?php foreach ($data as $item) { ?>
         <tr>
