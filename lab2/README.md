@@ -1,0 +1,3 @@
+Chay lenh: 
+composer install 
+de download vendor
